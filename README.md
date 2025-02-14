@@ -1,2 +1,2 @@
-# finance_project
-stock tracker and trader
+# Rental Management App?
+Revolutionising the world of rental properties!
