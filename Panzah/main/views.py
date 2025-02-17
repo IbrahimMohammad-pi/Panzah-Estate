@@ -2,8 +2,22 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(response, id):
-    return HttpResponse("<h1>%s</h1>" % id)
-
-
 # Create your views here.
+
+def index(request):
+    return render(request, 'main/index.html')
+
+def login_page(request):
+    return render(request, 'main/login.html')
+
+def register_page(request):
+    return render(request, 'main/register.html')
+
+def landlord_home_page(request):
+    return render(request, 'main/LL_home.html')
+
+def tenant_home(request):
+    return render(request, 'main/ten_home.html')
+
+def analytics_page(request):
+    return render(request, 'main/analytics.html')
