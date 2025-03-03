@@ -21,7 +21,7 @@ class Tenant(models.Model):
 
 
 class BuildingAddress(models.Model):
-    building_name = models.CharField(max_length=100)
+    building_name = models.CharField(max_length=100, blank=True)
     building_number = models.IntegerField()
     street = models.CharField(max_length=100)
     city = models.CharField(max_length=100)

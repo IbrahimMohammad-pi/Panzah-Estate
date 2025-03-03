@@ -19,5 +19,8 @@ def landlord_home_page(request):
 def tenant_home(request):
     return render(request, 'main/ten_home.html')
 
+def user_profile_page(request):
+    return render(request, 'main/user_profile.html')
+
 def analytics_page(request):
     return render(request, 'main/analytics.html')
