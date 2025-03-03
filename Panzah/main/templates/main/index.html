@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 
 <body>
-
+  <h1>Panzah</h1>
+  <a href="{% url 'tenant_home' %}">Tenant home</a>
+  <a href="{% url 'landlord_home' %}">Landlord home</a>
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Django Template</title>
+    <!-- Optionally include a CSS framework like Bootstrap for styling -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+
+</head>
+<body>
+  <div class="container mt-5">
+
+    <h1>Welcome {& tenant.name %}</h1>
+    <p>This is a basic HTML template.</p>
+    <!-- Standalone button that navigates to the 'destination' page -->
+  </div>
+</body>
+</html>
